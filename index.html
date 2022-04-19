@@ -6,83 +6,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misterios de Chile</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Montserrat:wght@300&family=Oswald:wght@200;300&family=Style+Script&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/980556887b.js" crossorigin="anonymous"></script>
+
+    <!--ESTILOS PROPIOS-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--LOGO Y NAVEGACION-->
     <!--ESTE ES EL LOGO-->
     <div class="wrapper-index">
-        <header class="header">
-            <a href="index.html"><img class="logo" src="assets/img/Misterios de Chile-logo.png" alt="logo-misterios-de-chile"></a>
-            <!--ESTE ES EL NAV-->
-            <nav>
-                <ul class="nav-menu">
-                    <li class="lista-menu"><a class="link-lista" href="index.html">Inicio</a></li>
-                    <li class="lista-menu"><a class="link-lista" href="pages/historia.html">Historias</a></li>
-                    <li class="lista-menu"><a class="link-lista" href="pages/podcasts.html">Podcasts</a></li>
-                    <li class="lista-menu"><a class="link-lista" href="pages/galeria.html">Galería</a></li>
-                    <li class="lista-menu"><a class="link-lista" href="pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header class="flex-wrap py-3">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-menu">
+                <div class="container-fluid">
+                    <a href="index.html"
+                        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"><img
+                            class="logo" src="assets/img/Misterios de Chile-logo.png" alt="logo-misterios-de-chile">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-menu" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="link-lista" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-lista" href="pages/historia.html">Historias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-lista" href="pages/podcasts.html">Podcasts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-lista" href="pages/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="link-lista" href="pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <!--CIERRE LOGO Y NAVEGACION-->
-        <!--INFORMACION DEL SITIO-->
-        <section class="section">
-            <div class="gif-portada">
-                <img src="assets/img/Portada - GIF.gif" alt="portada-Misterios-de-Chile">
-            </div>
-            <article class="article">
-                <h1>Descubre los misterios y las leyendas más intrigantes del país</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi doloribus esse obcaecati
-                    ipsa
-                    aspernatur, impedit ratione est nesciunt ullam neque architecto, vitae praesentium laudantium
-                    blanditiis
-                    id. Assumenda eos nobis laboriosam amet autem, officia aut odit ullam porro beatae illo ratione
-                    corporis
-                    cupiditate maxime optio a iste. Eius error vel dolor obcaecati quaerat magnam eos excepturi esse
-                    minus
-                    animi alias perspiciatis dolores sit magni at facilis, aliquid corrupti. Autem culpa eveniet saepe
-                    explicabo iste? Dicta dolorem minima autem asperiores magnam quos veniam iure ipsa illum! Harum
-                    voluptatibus perferendis veniam magnam aperiam fugiat, consequatur asperiores, hic eius qui, laborum
-                    soluta deserunt!</p>
-            </article>
-        </section>
+    </div>
 
-        <!--CIERRE INFORMACION DEL SITIO-->
-        <!--INICIO FOOTER-->
-        <footer class="footer">
-            <div class="contenedor-1">
-                <div class="logo-footer">
-                    <figure>
-                        <img src="assets/img/Misterios de Chile-logo.png" alt="logo-misterios-de-chile">
-                    </figure>
+    <!--CIERRE LOGO Y NAVEGACION-->
+    <div class="container">
+        <div id="mi-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item carusel-contenido active">
+                    <img src="assets/img/panel-1.jpg" class="d-block w-100 carousel-img">
                 </div>
-                <div class="nosotros">
-                    <h2>Nosotros</h2>
-                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officia!</P>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, excepturi?</p>
-                    <br>
-                    <h2><a style="text-decoration:none" href="pages/contacto.html">Contacto</a></h2>
+                <div class="carousel-item carusel-contenido">
+                    <img src="assets/img/panel-2.jpg" class="d-block w-100 carousel-img">
                 </div>
-                <div class="redes-sociales">
-                    <h2>Síguenos</h2>
-                    <a href="#" class="fa-brands fa-facebook-square"></a>
-                    <a href="#" class="fa-brands fa-instagram-square"></a>
+                <div class="carousel-item carusel-contenido">
+                    <img src="assets/img/panel-3.jpg" class="d-block w-100 carousel-img">
+                </div>
+                <div class="carousel-item carusel-contenido">
+                    <img src="assets/img/panel-4.jpg" class="d-block w-100 carousel-img">
                 </div>
             </div>
-            <div class="contenedor-2">
-                <small>&copy;2022 <b>Misterios de Chile</b> :: Derechos Reservados ::</small>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mi-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mi-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--INFORMACION DEL SITIO-->
+    <section class="section">
+        <article class="article">
+            <h1>Descubre los misterios y las leyendas más intrigantes del país</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi doloribus esse obcaecati
+                ipsa
+                aspernatur, impedit ratione est nesciunt ullam neque architecto, vitae praesentium laudantium
+                blanditiis
+                id. Assumenda eos nobis laboriosam amet autem, officia aut odit ullam porro beatae illo ratione
+                corporis
+                cupiditate maxime optio a iste. Eius error vel dolor obcaecati quaerat magnam eos excepturi esse
+                minus
+                animi alias perspiciatis dolores sit magni at facilis, aliquid corrupti. Autem culpa eveniet saepe
+                explicabo iste? Dicta dolorem minima autem asperiores magnam quos veniam iure ipsa illum! Harum
+                voluptatibus perferendis veniam magnam aperiam fugiat, consequatur asperiores, hic eius qui, laborum
+                soluta deserunt!</p>
+        </article>
+    </section>
+
+    <div class="card-group">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Historias</h5>
+                <p class="card-text">Conoce las historias más impactantes y misteriosas de todo Chile</p>
+                <a href="pages/historia.html" class="btn btn-primary">Historias</a>
             </div>
-        </footer>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Podcasts</h5>
+                <p class="card-text">¿Quieres escuchar historias para un dulce sueño?</p>
+                <a href="pages/podcasts.html" class="btn btn-primary">Podcasts</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Galería</h5>
+                <p class="card-text">Revisa algunos videos, narrados por personas que han vivido de cerca estos
+                    misterios</p>
+                <a href="pages/galeria.html" class="btn btn-primary">Galería</a>
+            </div>
+        </div>
+    </div>
+
+    <!--CIERRE INFORMACION DEL SITIO-->
+    <!--INICIO FOOTER-->
+    <footer class="footer">
+        <div class="contenedor-1">
+            <div class="logo-footer">
+                <figure>
+                    <img src="assets/img/Misterios de Chile-logo.png" alt="logo-misterios-de-chile">
+                </figure>
+            </div>
+            <div class="nosotros">
+                <h2>Nosotros</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officia!</P>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, excepturi?</p>
+                <br>
+                <h2><a style="text-decoration:none" href="pages/contacto.html">Contacto</a></h2>
+            </div>
+            <div class="redes-sociales">
+                <h2>Síguenos</h2>
+                <a href="#" class="fa-brands fa-facebook-square"></a>
+                <a href="#" class="fa-brands fa-instagram-square"></a>
+            </div>
+        </div>
+        <div class="contenedor-2">
+            <small>&copy;2022 <b>Misterios de Chile</b> :: Derechos Reservados ::</small>
+        </div>
+    </footer>
     </div>
     <!--CIERRE FOOTER-->
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
