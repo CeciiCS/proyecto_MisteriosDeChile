@@ -60,24 +60,36 @@
     <!--CIERRE LOGO Y NAVEGACION-->
     <!--INICIO CONTACTO-->
     <section class="section-contacto">
-        <article class="article-info">
-            <h1>Contacto</h1>
-            <p>¿Quieres dejarnos una sugerencia y/o comentario?</p>
-            <p><strong>¡Escríbenos!</strong></p>
-        </article>
-        <div class="container-contact"></div>
-        <form class="formulario">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="control" id="nombre" placeholder="ingrese su nombre">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="control" id="apellido" placeholder="ingrese su apellido">
-            <label for="correo">Correo</label>
-            <input type="email" class="control" id="correo" placeholder="ingrese su coreo">
-            <label for="comentario">Comentario</label>
-            <textarea name="" id="" cols="39" rows="5"></textarea>
-            <input type="submit" id="boton" value="Enviar comentario">
-        </form>
-        </div>
+        <section class="container">
+            <div class="row my-5">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <form action="" method="" class="formulario">
+                        <h1 class="display-5 text-center my-3">Contacto</h1>
+                        <p class="display-5 text-center my-3">¿Quieres dejarnos una sugerencia y/o comentario?</p>
+                        <h3 class="display-5 text-center my-3">¡Escríbenos!</h3>
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" placeholder="Ingrese su nombre" class="form-control" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" placeholder="Ingrese su apellido" class="form-control" id="apellido">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo" class="form-label">Correo:</label>
+                            <input type="email" placeholder="Ingrese su correo" class="form-control" id="correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="comentario" class="form-label">Comentario:</label>
+                            <textarea class="form-control" id="comentario" rows="3"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <input class="btn btn-color" type="submit" value="Enviar comentario">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </section>
     <!--CIERRE CONTACTO-->
     <!--INICIO FOOTER-->
@@ -97,8 +109,8 @@
             </div>
             <div class="redes-sociales">
                 <h2>Síguenos</h2>
-                <a href="#" class="fa-brands fa-facebook-square"></a>
-                <a href="#" class="fa-brands fa-instagram-square"></a>
+                <a href="https://www.facebook.com/MisteriosDeChile/" target="_blank" class="fa-brands fa-facebook-square"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram-square"></a>
             </div>
         </div>
         <div class="contenedor-2">
@@ -106,6 +118,11 @@
         </div>
     </footer>
     <!--CIERRE FOOTER-->
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

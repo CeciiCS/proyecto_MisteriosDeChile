@@ -48,8 +48,6 @@ body {
     background-size:cover;
 }
 
-
-
 .section {
     display: flex;
     flex-direction: column;
@@ -61,7 +59,10 @@ body {
 }
 
 .article {
-    margin: 0 150px;
+    width: 80%;
+    height: 100%;
+    margin: 0 60px;
+    align-self: center;
 }
 
 .article h1 {
@@ -81,8 +82,17 @@ body {
 }
 
 .card-group{
-    padding: 0 150px;
-    margin-bottom: 30px;
+    width: 80%;
+    margin: 0 40px;
+    margin-bottom: 30px; 
+    align-self: center;
+}
+
+.card h5{
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(234, 175, 102);
     
 }
 
@@ -93,12 +103,12 @@ body {
     font-size: 15px;
 }
 
-.btn-primary{
+.btn-color{
     background-color: rgb(85, 1, 1);
     border-color: rgb(85, 1, 1);
 }
 
-.btn-primary:hover{
+.btn-color:hover{
     background-color: rgb(0, 0, 0);
     border-color: rgb(85, 1, 1);
 }
@@ -106,37 +116,31 @@ body {
 
 /*--Historia, Podcasts, Galería, Contacto--*/
 
+.section .container-fluid p{
+    text-align: justify;
+}
+
 .section-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 20px;
 
 }
 
-.article-info {
-    margin: 10px 60px;
-    align-content: center;
-    text-align: center;
-}
-
-.article-info h1 {
+.container-fluid h1{
     font-size: 1.3em;
     font-weight: bold;
+    text-align: center;
     line-height: 1.2em;
     color: rgb(199, 74, 46);
     padding-bottom: 15px;
 }
 
-.article-info p {
+.container-fluid p{
     font-size: 16px;
     text-align: center;
     color: whitesmoke;
-}
-
-.section-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 /*Historia*/
@@ -153,8 +157,6 @@ body {
     height: 220px;
 }
 
-
-
 .contenedor-div h5 {
     padding: 10px;
     color: wheat;
@@ -166,6 +168,7 @@ body {
     padding: 0 10px;
     color: whitesmoke;
     font-size: 15px;
+    text-align: justify;
 }
 
 /*Podcasts*/
@@ -186,13 +189,11 @@ body {
 
 .galeria-div {
     text-align: center;
-    margin: 0 105px 0 120px;
-
 }
 
 .iframe-1 {
-    width: 40%;
-    height: 300px;
+    width: 45%;
+    height: 400px;
     margin: 20px;
     padding: 5px;
     display: inline-block;
@@ -200,62 +201,70 @@ body {
 }
 
 .iframe-2 {
-    width: 40%;
-    height: 300px;
+    width: 45%;
+    height: 400px;
     margin: 20px;
     padding: 5px;
     display: inline-block;
     margin: auto;
 }
 
+
 /*Contacto*/
 
 .section-contacto {
     background-image: url(../assets/img/cementerio-general-2.jpg);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-
-    height: 700px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .formulario {
-    align-items: flex-end;
+    max-width: 25em;
+    padding: 1.3em;
     margin: 0 auto;
-    padding: 10px;
-    width: 330px;
-    height: auto;
-    color: rgb(2, 17, 31);
+    font-weight: bold;
     background-color: rgba(9, 9, 9, 0.414);
     border-radius: 10px;
     border: rgb(157, 21, 78) solid 5px;
 }
 
+.formulario h1{
+    font-size: 1.5em;
+    color: rgb(199, 74, 46);
+    font-weight: bold;
+}
+
+.formulario p{
+    font-size: 16px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+.formulario h3{
+    font-size: 20px;
+    color: rgb(234, 178, 129);
+    font-weight: bold;
+}
+
 .formulario label {
     font-size: 15px;
-    margin: 20px 0;
-    color: bisque;
-
+    color: wheat;
 }
 
-.formulario .control {
-    width: 300px;
-    height: 30px;
-    margin-bottom: 10px;
-    outline: none;
-    border: solid 1px;
-}
-
-#boton {
-    width: 300px;
-    height: 30px;
+.btn {
     margin-top: 15px;
     background-color: #000000;
     color: bisque;
+    font-weight: bold;
+    
 }
 
-#boton:hover {
+.btn:hover {
     background-color: rgb(64, 5, 5);
     color: whitesmoke;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -361,15 +370,16 @@ body {
 
 @keyframes video{
     0%{
-        transform: scale(2);        
+        border-radius: 30px; 
     }
 
     60%{
-        transition: all 1.5s;
+        border-radius: 45px;
+        background-color: rgb(172, 5, 5); 
     }
 
     99%{
-        border-radius: 80px;
+        border-radius: 60px;
     }
 }
 
@@ -420,40 +430,13 @@ body {
     }
 
     .contenedor-div .card{
-        margin: 15px 105px;
+        margin: 15px;
         padding: 0 20px;
         text-align: center;
     }
 
     .section-info {
         margin-top: 20px;
-    }
-
-    .article-info {
-        margin-right: 50px;
-        margin-bottom: 30px;
-        align-items: flex-start;
-
-    }
-
-    .article-info h1 {
-        text-align: center;
-        font-size: 20px;
-    }
-
-    .article-info p {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .article-info h1 {
-        text-align: center;
-        font-size: 17.5px;
-    }
-
-    .article-info p {
-        text-align: center;
-        font-size: 14px;
     }
 
     .contenedor-div {
@@ -482,15 +465,18 @@ body {
 
     .iframe-1 {
         width: 100%;
+        height: 300px;
     }
 
     .iframe-2 {
         width: 100%;
+        height: 300px;
     }
 
     .section-contacto {
         margin-top: 20px;
     }
+
 
     .footer .contenedor-1 {
         grid-template-columns: repeat(1, 1fr);
@@ -521,16 +507,11 @@ body {
 @media only screen and (min-width: 576px) and (max-width: 991.98px) {
 
     .section {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-        "article";
-        justify-content: center;
-
+        display: flex;
+        flex-direction: column;
     }
 
     .article {
-
         text-align: center;
         margin-top: 0;
         padding: 0 20px;
@@ -542,29 +523,13 @@ body {
     }
 
     .contenedor-div .card{
-        margin: 15px 105px;
+        margin: 15px;
         padding: 0 20px;
         text-align: center;
     }
 
     .section-info {
         margin-top: 20px;
-    }
-
-    .article-info {
-        margin: 10px 60px;
-        align-items: center;
-
-    }
-
-    .article-info h1 {
-        text-align: center;
-        font-size: 19px;
-    }
-
-    .article-info p {
-        text-align: center;
-        font-size: 15px;
     }
 
     .contenedor-div {
@@ -584,15 +549,16 @@ body {
 
     .galeria-div {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "videoyt-1 videoyt-2"
-        ;
-        margin: 0 15px;
+            "videoyt-1"
+            "videoyt-2";
+        margin: 15px;
     }
 
     .iframe-1 {
         width: 100%;
+        height: 400px;
     }
 
     .iframe-2 {
