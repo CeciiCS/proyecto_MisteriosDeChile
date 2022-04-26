@@ -1,0 +1,19 @@
+{
+  "name": "proyecto_misterios_chile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CeciiCS/proyecto_MisteriosDeChile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CeciiCS/proyecto_MisteriosDeChile/issues"
+  },
+  "homepage": "https://github.com/CeciiCS/proyecto_MisteriosDeChile#readme"
+}

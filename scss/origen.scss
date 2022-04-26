@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//IMPORT//
+
+@import "colores";
+
+
+//VARIABLES//
+
+$bordecard: rgb(64, 5, 5) solid 1px;
+$alinear-j: justify;
+$alinear-c: center;
+$bordeform: rgb(157, 21, 78) solid 5px;
+$negrita: bold;
+
+
+/*ESTILOS*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: $colorfondo;
+    background: $colorgradiente;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-menu {
+    background-color: #40050553;
+}
+
+.container-fluid {
+
+    .logo {
+        padding: 10px 40px;
+        align-items: $alinear-c;
+        width: 300px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+        font-weight: $negrita;
+        text-align: $alinear-c;
+        line-height: 1.2em;
+        color: $colorh1;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: $alinear-c;
+        color: $colorwd;
+    }
+}
+
+.link-lista {
+    display: block;
+    padding: .5rem 1rem;
+    color: $colorwd;
+    text-decoration: none;
+    font-size: 16px;
+
+    &:hover {
+        color: rgb(255, 0, 0);
+        transition: all 1s;
+    }
+}
+
+/*Index*/
+
+.carousel-item {
+    background-position: $alinear-c;
+    background-size: cover;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.article {
+    width: 80%;
+    height: 100%;
+    margin: 0 60px;
+    align-self: $alinear-c;
+
+    h1 {
+        color: rgb(250, 225, 216);
+        font-family: 'Trebuchet MS';
+        font-size: 25px;
+        font-weight: 900;
+        text-align: $alinear-c;
+        text-shadow: $colorsombra;
+    }
+
+    p {
+        color: $colorwd;
+        padding-top: 1rem;
+        text-align: $alinear-j;
+        font-size: 16px;
+    }
+}
+
+.card-group {
+    width: 80%;
+    margin: 0 40px;
+    margin-bottom: 30px;
+    align-self: $alinear-c;
+}
+
+.card {
+    background-color: $colorfondo;
+    color: $colorwd;
+    border: $bordecard;
+    font-size: 15px;
+
+    h5 {
+        color: $colorwd;
+        font-size: 16px;
+        font-weight: $negrita;
+        color: $colorh5;
+
+    }
+
+    .btn-color {
+        background-color: $colorbckg;
+        border-color: $colorbckg;
+        color: $colorwd;
+
+        &:hover {
+            background-color: $colorfondo;
+            border-color: $colorbckg;
+        }
+
+    }
+}
+
+/*--Historia, Podcasts, Galería, Contacto--*/
+
+.section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: $alinear-c;
+    margin-bottom: 20px;
+
+}
+
+/*Historia*/
+
+.contenedor-div {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+
+    img {
+        padding: 0 30px;
+        width: 340px;
+        height: 220px;
+    }
+
+    h5 {
+        padding: 10px;
+        color: $colorwd2;
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    p {
+        padding: 0 10px;
+        color: $colorwd;
+        font-size: 15px;
+        text-align: $alinear-j;
+    }
+}
+
+/*Podcasts*/
+
+.podcasts {
+    margin: 10px;
+    align-items: $alinear-c;
+
+    iframe {
+        width: 100%;
+        height: 180px;
+        padding: 10px;
+        align-self: $alinear-c;
+    }
+}
+
+/*Galeria*/
+
+.galeria-div {
+    text-align: $alinear-c;
+
+    .iframe-1 {
+        width: 45%;
+        height: 400px;
+        margin: 20px;
+        padding: 5px;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .iframe-2 {
+        width: 45%;
+        height: 400px;
+        margin: 20px;
+        padding: 5px;
+        display: inline-block;
+        margin: auto;
+    }
+}
+
+/*Contacto*/
+
+.section-contacto {
+    background-image: url(../assets/img/cementerio-general-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: $alinear-c;
+}
+
+.formulario {
+    max-width: 25em;
+    padding: 1.3em;
+    margin: 0 auto;
+    font-weight: $negrita;
+    background-color: $colorfondoform;
+    border-radius: 10px;
+    border: $bordeform;
+
+    h1 {
+        font-size: 1.5em;
+        color: $colorh1;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: $colorh3;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: $alinear-c;
+        color: $colorwd;
+    }
+
+    label {
+        font-size: 15px;
+        color: $colorwd2;
+    }
+}
+
+.btn {
+    margin-top: 15px;
+    background-color: $colorfondo;
+    color: bisque;
+    font-weight: $negrita;
+
+    &:hover {
+        background-color: $colorbckg;
+        color: $colorwd;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    color: $colorwd;
+    background-color: $colorfondo;
+    text-align: $alinear-c;
+    padding: 15px 10px;
+
+    .contenedor-1 {
+        width: 100%;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "logo-footer nosotros redes-sociales";
+        grid-gap: 50px;
+        padding: 30px 0px;
+
+        figure {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: $alinear-c;
+            align-items: $alinear-c;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        .nosotros {
+            h2 {
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            p {
+                margin-bottom: 10px;
+                text-align: $alinear-j;
+            }
+        }
+
+        .redes-sociales {
+            h2 {
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: $colorfondo;
+                margin-right: 5px;
+                background-color: $color-rs;
+                text-align: $alinear-c;
+            }
+        }
+    }
+
+    .contenedor-2 {
+        background-color: rgba(74, 2, 2, 0.33);
+        padding: 15px 10px;
+        text-align: $alinear-c;
+        color: $colorwd;
+
+        small {
+            font-size: 15px;
+        }
+    }
+}
+
+/*ANIMACIONES*/
+
+.podcasts:hover {
+    animation: podcasts 5s;
+
+}
+
+@keyframes podcasts {
+    0% {
+        transition: all 1.5s;
+    }
+
+    60% {
+        background-color: $color-tr;
+    }
+
+    99% {
+        border-radius: 20px;
+    }
+}
+
+.galeria-div iframe:hover {
+    animation: video 5s;
+}
+
+@keyframes video {
+    0% {
+        border-radius: 30px;
+    }
+
+    60% {
+        border-radius: 45px;
+        background-color: $color-tr;
+    }
+
+    99% {
+        border-radius: 60px;
+    }
+}
+
+/*GRIDS*/
+
+.iframe-1 {
+    grid-area: videoyt-1;
+}
+
+.iframe-2 {
+    grid-area: videoyt-2;
+}
+
+.figure {
+    grid-area: logo-footer;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+.redes-sociales {
+    grid-area: redes-sociales;
+}
+
+/*MEDIA QUERY :: VERSION MOBILE*/
+
+@media only screen and (max-width: 575.98px) {
+    .article {
+        text-align: $alinear-c;
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .contenedor-div {
+        flex-direction: column;
+        text-align: $alinear-c;
+        margin: 20px 15px;
+
+        .card {
+            margin: 15px;
+            padding: 0 20px;
+            text-align: $alinear-c;
+        }
+
+        h5 {
+            font-size: 16px;
+
+        }
+
+        p {
+            font-size: 14px;
+            text-align: $alinear-j;
+        }
+    }
+
+    .section-info {
+        margin-top: 20px;
+    }
+
+    .galeria-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "videoyt-1"
+            "videoyt-2";
+        margin: 15px;
+
+        .iframe-1 {
+            width: 100%;
+            height: 300px;
+        }
+
+        .iframe-2 {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    .section-contacto {
+        margin-top: 20px;
+    }
+
+    .footer {
+        .contenedor-1 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+                "logo-footer"
+                "nosotros"
+                "redes-sociales";
+
+            h2 {
+                font-size: 16px;
+            }
+
+            .nosotros p {
+                margin: 0 100px;
+                text-align: $alinear-j;
+                font-size: 14px;
+            }
+        }
+
+        .contenedor-2 small {
+            font-size: 14px;
+        }
+    }
+}
+
+/*MEDIA QUERY :: VERSION TABLET*/
+
+@media only screen and (min-width: 576px) and (max-width: 991.98px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+
+        .article {
+            text-align: $alinear-c;
+            margin-top: 0;
+            padding: 0 20px;
+        }
+    }
+
+    .section-info {
+        margin-top: 20px;
+    }
+
+    .contenedor-div {
+        flex-direction: column;
+        text-align: $alinear-c;
+        margin: 20px 15px;
+
+        .card {
+            margin: 15px;
+            padding: 0 20px;
+            text-align: $alinear-c;
+        }
+
+        h5 {
+            font-size: 16px;
+
+        }
+
+        p {
+            font-size: 14px;
+            text-align: $alinear-j;
+        }
+
+    }
+
+    .galeria-div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "videoyt-1"
+            "videoyt-2";
+        margin: 15px;
+
+        .iframe-1 {
+            width: 100%;
+            height: 400px;
+        }
+
+        .iframe-2 {
+            width: 100%;
+        }
+    }
+
+    .section-contacto {
+        margin-top: 20px;
+    }
+
+    .footer .contenedor-1 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "logo-footer"
+            "nosotros"
+            "redes-sociales";
+
+        .nosotros p {
+            margin: 0 150px;
+            text-align: $alinear-j;
+        }
+    }
+}
+
+/*MEDIA QUERY :: VERSION PC 992px*/
+
+@media only screen and (min-width: 992px) {
+    .carousel-item{
+        height: 30rem;
+
+        .carousel-img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
