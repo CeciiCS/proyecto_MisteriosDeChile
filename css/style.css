@@ -5,6 +5,37 @@
   box-sizing: border-box;
 }
 
+h3, .footer .contenedor-1 .redes-sociales h3, .footer .contenedor-1 .nosotros h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: rgb(251, 234, 220);
+}
+
+.btn {
+  border-color: rgb(85, 1, 1);
+  color: whitesmoke;
+}
+.btn.fill--btn-sitio {
+  background-color: rgb(85, 1, 1);
+}
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  border-color: rgb(85, 1, 1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn.fill--btn-form {
+  background-color: rgb(122, 14, 14);
+}
+.btn:hover {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+  border-color: rgb(85, 1, 1);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /*ESTILOS*/
 body {
   font-family: "Montserrat", sans-serif;
@@ -20,10 +51,10 @@ body {
 }
 
 .container-fluid .logo {
-  padding: 10px 40px;
-  align-items: center;
   width: 300px;
   height: 60px;
+  padding: 10px 40px;
+  align-items: center;
 }
 .container-fluid h1 {
   font-size: 1.3em;
@@ -71,13 +102,13 @@ body {
   margin: 0 60px;
   align-self: center;
 }
-.article h1 {
+.article #titulo-i {
   color: rgb(250, 225, 216);
   font-family: "Trebuchet MS";
   font-size: 25px;
   font-weight: 900;
   text-align: center;
-  text-shadow: -1px -1px 1px rgb(64, 5, 5), 2px 2px 2px rgb(213, 11, 11), -1px 1px 1px rgb(64, 5, 5), 3px -3px 3px rgb(213, 11, 11);
+  text-shadow: -1px -1px 1px rgb(64, 5, 5), 2px 2px 3px rgb(213, 11, 11), -1px 1px 1px rgb(64, 5, 5), -1px 3px 2px rgb(234, 175, 102);
 }
 .article p {
   color: whitesmoke;
@@ -99,20 +130,11 @@ body {
   border: rgb(64, 5, 5) solid 1px;
   font-size: 15px;
 }
-.card h5 {
+.card h2 {
   color: whitesmoke;
   font-size: 16px;
   font-weight: bold;
   color: rgb(234, 175, 102);
-}
-.card .btn-color {
-  background-color: rgb(85, 1, 1);
-  border-color: rgb(85, 1, 1);
-  color: whitesmoke;
-}
-.card .btn-color:hover {
-  background-color: rgb(0, 0, 0);
-  border-color: rgb(85, 1, 1);
 }
 
 /*--Historia, Podcasts, Galería, Contacto--*/
@@ -134,11 +156,11 @@ body {
   width: 340px;
   height: 220px;
 }
-.contenedor-div h5 {
+.contenedor-div h2 {
   padding: 10px;
   color: wheat;
   font-size: 17px;
-  font-weight: 900;
+  font-weight: bold;
 }
 .contenedor-div p {
   padding: 0 10px;
@@ -166,18 +188,16 @@ body {
 .galeria-div .iframe-1 {
   width: 45%;
   height: 400px;
-  margin: 20px;
+  margin: auto;
   padding: 5px;
   display: inline-block;
-  margin: auto;
 }
 .galeria-div .iframe-2 {
   width: 45%;
   height: 400px;
-  margin: 20px;
+  margin: auto;
   padding: 5px;
   display: inline-block;
-  margin: auto;
 }
 
 /*Contacto*/
@@ -193,7 +213,7 @@ body {
   padding: 1.3em;
   margin: 0 auto;
   font-weight: bold;
-  background-color: rgba(9, 9, 9, 0.414);
+  background-color: rgba(9, 9, 9, 0.527);
   border-radius: 10px;
   border: rgb(157, 21, 78) solid 5px;
 }
@@ -202,9 +222,9 @@ body {
   color: rgb(199, 74, 46);
   font-weight: bold;
 }
-.formulario h3 {
+.formulario h2 {
   font-size: 20px;
-  color: rgb(234, 178, 129);
+  color: rgb(234, 175, 102);
   font-weight: bold;
 }
 .formulario p {
@@ -216,18 +236,8 @@ body {
   font-size: 15px;
   color: wheat;
 }
-
-.btn {
-  margin-top: 15px;
-  background-color: rgb(0, 0, 0);
-  color: bisque;
-  font-weight: bold;
-}
-.btn:hover {
-  background-color: rgb(85, 1, 1);
-  color: whitesmoke;
-  border-radius: 10px;
-  cursor: pointer;
+.formulario .form-control {
+  margin-bottom: 10px;
 }
 
 /*Footer*/
@@ -257,17 +267,9 @@ body {
 .footer .contenedor-1 img {
   width: 250px;
 }
-.footer .contenedor-1 .nosotros h2 {
-  margin-bottom: 25px;
-  font-size: 20px;
-}
 .footer .contenedor-1 .nosotros p {
   margin-bottom: 10px;
   text-align: justify;
-}
-.footer .contenedor-1 .redes-sociales h2 {
-  margin-bottom: 25px;
-  font-size: 20px;
 }
 .footer .contenedor-1 .redes-sociales a {
   display: inline-block;
@@ -367,7 +369,7 @@ body {
     padding: 0 20px;
     text-align: center;
   }
-  .contenedor-div h5 {
+  .contenedor-div h2 {
     font-size: 16px;
   }
   .contenedor-div p {
@@ -402,7 +404,7 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "logo-footer" "nosotros" "redes-sociales";
   }
-  .footer .contenedor-1 h2 {
+  .footer .contenedor-1 h3, .footer .contenedor-1 .nosotros h3, .footer .contenedor-1 .redes-sociales h3 {
     font-size: 16px;
   }
   .footer .contenedor-1 .nosotros p {
@@ -440,7 +442,7 @@ body {
     padding: 0 20px;
     text-align: center;
   }
-  .contenedor-div h5 {
+  .contenedor-div h2 {
     font-size: 16px;
   }
   .contenedor-div p {
@@ -460,6 +462,7 @@ body {
   }
   .galeria-div .iframe-2 {
     width: 100%;
+    height: 400px;
   }
 
   .section-contacto {
