@@ -471,13 +471,13 @@ body {
         margin: 15px;
 
         .iframe-1 {
-            width: 100%;
-            height: 300px;
+        width: map-get($iframe-yt-media, width);
+        height: map-get($iframe-yt-media, height);
         }
 
         .iframe-2 {
-            width: 100%;
-            height: 300px;
+        width: map-get($iframe-yt-media, width);
+        height: map-get($iframe-yt-media, height);
         }
     }
 
@@ -560,13 +560,13 @@ body {
         margin: 15px;
 
         .iframe-1 {
-            width: 100%;
-            height: 400px;
+            width: map-get($iframe-yt-media-t, width);
+            height: map-get($iframe-yt-media-t, height);
         }
 
         .iframe-2 {
-            width: 100%;
-            height: 400px;
+            width: map-get($iframe-yt-media-t, width);
+            height: map-get($iframe-yt-media-t, height);
         }
     }
 

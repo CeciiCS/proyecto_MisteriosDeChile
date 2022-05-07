@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/origen.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CeciiCS/proyecto_MisteriosDeChile.git"
   },
-  "author": "",
+  "author": "Cecilia_Crisostomo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CeciiCS/proyecto_MisteriosDeChile/issues"
   },
   "homepage": "https://github.com/CeciiCS/proyecto_MisteriosDeChile#readme",
-  "description": ""
+  "description": "Misterios de Chile, es un sitio que recopila las leyendas o historias paranormales de Chile, a través de relatos, podcasts y series de esta índole",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "build-css": 
+  "node-sass --include-path scss scss/origen.scss css/style.css",
+  "watch-css": "nodemon -e scss -x \"npm run build-css\""
 }
