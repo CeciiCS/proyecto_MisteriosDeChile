@@ -374,6 +374,9 @@ body {
     padding: 0 20px;
     text-align: center;
   }
+  .contenedor-div .img-historia {
+    align-self: center;
+  }
   .contenedor-div h2 {
     font-size: 16px;
   }
